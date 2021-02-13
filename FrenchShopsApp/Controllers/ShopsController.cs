@@ -17,6 +17,8 @@ namespace FrenchShopsApp.Controllers
         [HttpGet]
         public IActionResult List()
         {
+            List<Shop> listShops = new List<Shop>();
+
             IEnumerable<T_Shop> listeShops = _BDD.T_Shop;
             return View(listeShops);
         }
