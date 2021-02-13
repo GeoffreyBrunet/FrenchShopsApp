@@ -10,31 +10,54 @@
 
 <form method="post" asp-action="Ajouter">
     <divclass ="border p-3">
+
         <divclass ="form-group row">
-            <h2class ="text-info pl-3">Ajouter un robot</h2>
+            <h2class ="text-info pl-3">Ajouter un magasin</h2>
         </div>
-        <divclass ="form-group row">
-            <divclass ="col-4">
-                <labelasp-for ="Nom"></label><!--le tag-helper permet d'utiliser un champ du modèle-->
-            </div>
-            <divclass ="col-8">
-                <inputasp-for ="Nom" class="form-control" />
-            </div>
-        </div>
+
         <divclass ="form-group row">
             <divclass ="col-4">
-                <labelasp-for ="Lienversphoto"></label>
+                <labelasp-for ="addName"></label><!--le tag-helper permet d'utiliser un champ du modèle-->
             </div>
             <divclass ="col-8">
-                <inputasp-for ="Lienversphoto" class="form-control" />
+                <inputasp-for ="addName" class="form-control" />
             </div>
         </div>
+
+        <divclass ="form-group row">
+            <divclass ="col-4">
+                <labelasp-for ="addAddress"></label>
+            </div>
+            <divclass ="col-8">
+                <inputasp-for ="addAddress" class="form-control" />
+            </div>
+        </div>
+
+        <divclass ="form-group row">
+            <divclass ="col-4">
+                <labelasp-for ="addAddress"></label>
+            </div>
+            <divclass ="col-8">
+                <inputasp-for ="addAddress" class="form-control" />
+            </div>
+        </div>
+
+        <divclass ="form-group row">
+            <divclass ="col-4">
+                <labelasp-for ="addUrl"></label>
+            </div>
+            <divclass ="col-8">
+                <inputasp-for ="addUrl" class="form-control" />
+            </div>
+        </div>
+
         <divclass ="form-group row">
             <divclass ="col-8 offset-4 row">
                 <divclass ="col">
-                    <inputtype ="submit" class="btn btn-info w-100" value="Enregistrer" />
+                    <inputtype ="submit" class="btn btn-info w-100" value="Ajouter" />
                 </div>
             </div>
         </div>
+
     </div>
 </form>
